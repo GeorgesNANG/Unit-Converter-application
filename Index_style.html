@@ -3,6 +3,7 @@
   <head>
       <title>Document</title>
       <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
   </head>
   <body>
       <section id="home">
@@ -32,14 +33,10 @@
               <fieldset>
                 <legend>Temperature</legend>
                 <label for="Temperature">Celsius</label> <br/>
-
- <input type="number" id="c"> <br/>
-
-                <button id="temperature"> Convert </button> <br/>
-
+                <input type="number" id="c"> <br/>
+                <button id="temperature" onclick="temperature()"> Convert </button> <br/>
                 <input type="number" id="f"> <br/>
-
- <label for="Temperature">Fahrenheit</label>
+                <label for="Temperature">Fahrenheit</label>
               </fieldset>
               <aside>
                 To convert celsuis to fahrenheit yourself, use this formula replacing the `C` with your temperature in celsuis: (C × 9/5) + 32
@@ -47,9 +44,7 @@
             </article>
           </div>
         </section>
-
         <div style="clear:both;"></div>
-      
         <section id="weight"  class="b weight">          
           <div id="wgt">
             <figure>
@@ -60,15 +55,10 @@
               <fieldset>
                 <legend>Weight</legend>
                 <label for="Weight">KG</label> <br/>
-
- <input type="number"> <br/>
-
-                <button id="weight"> Convert </button>  <br/>
-
- 
+                <input type="number"> <br/>
+                <button id="weight" onclick="weight()"> Convert </button>  <br/>
                 <input type="number">  <br/>
-
-  <label for="Weight">Pounds</label>    
+                <label for="Weight">Pounds</label>    
               </fieldset>
               <aside>
                 To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms: kg x 2.205
@@ -88,15 +78,11 @@
             <article>
               <fieldset>
                 <legend>Distance</legend>
-                  <label for="Distance">KM</label> <br/>
-
- <input type="number">  <br/>
-
-                  <button id="distance"> Convert </button> <br/>
-
-                  <input type="number">  <br/>
-
-  <label for="Distance">Miles</label>
+                <label for="Distance">KM</label> <br/>
+                <input type="number">  <br/>
+                <button id="distance" onclick="distance()"> Convert </button> <br/>
+                <input type="number">  <br/>
+                <label for="Distance">Miles</label>
               </fieldset>
               <aside>
                 To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilmeters: km &divide; 1.609
